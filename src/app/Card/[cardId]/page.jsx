@@ -31,8 +31,11 @@ const cardDatailsPage = async ({ params }) => {
                         {card.status}
                     </p>
 
-                    <p className='badge badge-warning'>{card.tags[0]}</p>
-                    <p className="text-sm text-gray-500">{card.bio}</p>
+               <div>     <p className='badge badge-warning'>{card.tags[0]}</p>
+                         <p className="text-sm text-gray-500">{card.bio}</p>
+                         <p className="text-sm text-gray-500">{card.email}</p>
+                         
+                         </div>
                 </div>
 
 
@@ -81,7 +84,7 @@ const cardDatailsPage = async ({ params }) => {
                     <div className="card shadow min-h-25 lg:h-36 flex items-center justify-center">
                         <div className="card-body text-center p-3">
                             <h2 className="text-xl md:text-3xl font-semibold">6</h2>
-                            <p className="text-xs md:text-sm text-gray-400">Need Attention</p>
+                            <p className="text-xs md:text-sm text-gray-400">{card.next_due_date}</p>
                         </div>
                     </div>
 
@@ -92,7 +95,7 @@ const cardDatailsPage = async ({ params }) => {
                         <h1>Relationship Goal</h1>
                         <button className='btn'>Edit</button>
                     </div>
-                    <p>Connect every 30 days</p>
+                    <p>Connect every {card.goal} days</p>
                 </div>
                 <div>
                      <Cards card={card}>
