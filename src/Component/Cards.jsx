@@ -36,7 +36,7 @@ const Cards = ({card}) => {
 
                 <div
                     onClick={() => handleAction("call")}
-                    className="card shadow min-h-[80px] lg:h-20 flex items-center justify-center">
+                    className="card shadow min-h-20 lg:h-20 flex items-center justify-center">
                     <div className="card-body text-center ">
                         <MdWifiCalling2 size={40} />
                         <p className="text-xs md:text-xl  text-gray-900">
@@ -46,7 +46,7 @@ const Cards = ({card}) => {
                 </div>
                 <div
                     onClick={() => handleAction("text")}
-                    className="card shadow min-h-[80px] lg:h-20 flex items-center justify-center">
+                    className="card shadow min-h-20 lg:h-20 flex items-center justify-center">
                     <div className="card-body text-center p-3">
                         <IoMdText size={40} />
                         <p className="text-xs md:text-sm text-gray-900">
@@ -56,7 +56,7 @@ const Cards = ({card}) => {
                 </div>
                 <div
                     onClick={() => handleAction("video")}
-                   className="card shadow min-h-[80px] lg:h-20 flex items-center justify-center">
+                   className="card shadow min-h-20 lg:h-20 flex items-center justify-center">
                     <div className="card-body text-center p-3">
                         <FaVideo size={40} />
 
