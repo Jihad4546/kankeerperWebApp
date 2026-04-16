@@ -11,7 +11,10 @@ const Navbar = () => {
     const navLinks = (
         <>
             <li>
-                <Link href="/" className={`flex items-center gap-2 py-2 ${pathname === '/' ? 'bg-[#244D3F] text-white' : 'text-gray-500'}`}>
+                <Link href="/" className={`flex items-center gap-2 px-3 py-2 rounded-md transition-all duration-200 ${pathname === '/'
+                        ? 'bg-[#244D3F] text-white shadow-sm'
+                        : 'text-gray-500 hover:text-black hover:bg-gray-100'
+                    }`}>
                     <CiHome className="text-xl" />
                     <span className=''>Home</span>
                 </Link>
@@ -22,7 +25,7 @@ const Navbar = () => {
                     <span >Timeline</span>
                 </Link>
             </li>
-           
+
             <li>
                 <Link href="/stats" className={`flex items-center gap-2 py-2 ${pathname === '/stats' ? 'bg-[#244D3F] text-white' : 'text-gray-500'}`}>
                     <ImStatsDots className="text-lg" />
@@ -60,7 +63,7 @@ const Navbar = () => {
                 </div>
 
             </div>
-            </div>
+        </div>
     );
 };
 

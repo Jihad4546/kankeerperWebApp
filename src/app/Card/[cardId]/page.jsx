@@ -48,7 +48,7 @@ const cardDatailsPage = async ({ params }) => {
                         Archive
                     </div>
 
-                    <div className="flex items-center gap-2 shadow w-full p-2 md:p-3 justify-center text-sm md:text-lg rounded-xl cursor-pointer">
+                    <div className="flex items-center gap-2 shadow w-full p-2 mb-5 md:p-3 justify-center text-sm md:text-lg rounded-xl cursor-pointer">
                         <MdDelete />
                         Delete
                     </div>
