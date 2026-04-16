@@ -17,7 +17,7 @@ const CardPage = async () => {
                     ${a.status === "overdue"
                             ? "text-white bg-red-600 px-2 py-1 rounded"
                             : a.status === "almost due"
-                                ? "text-white bg-yellow-500 px-2 py-1 rounded"
+                                ? "text-white text-[12px] md:text-xl bg-yellow-500 px-2 py-1 rounded"
                                 : a.status === "on-track"
                                     ? "text-white bg-green-900 px-2 py-1 rounded"
                                     : "text-gray-500"

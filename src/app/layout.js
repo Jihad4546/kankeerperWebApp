@@ -27,10 +27,10 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navber></Navber>
+        <Navber className='overflow-hidden'></Navber>
          <ToastContainer/>
         {children}
-         <Footer></Footer>
+         <Footer className='overflow-hidden'></Footer>
         </body>
     </html>
   );
