@@ -32,11 +32,11 @@ const Cards = ({card}) => {
     return (
         <div className='mt-5'>
             <h1>Quick Check-In</h1>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mt-5'>
 
                 <div
                     onClick={() => handleAction("call")}
-                    className="bg-gray-200 carou  card shadow lg:h-20 flex items-center justify-center">
+                    className="card shadow min-h-[80px] lg:h-20 flex items-center justify-center">
                     <div className="card-body text-center ">
                         <MdWifiCalling2 size={40} />
                         <p className="text-xs md:text-xl  text-gray-900">
@@ -46,7 +46,7 @@ const Cards = ({card}) => {
                 </div>
                 <div
                     onClick={() => handleAction("text")}
-                    className="card shadow lg:h-20 flex items-center justify-center">
+                    className="card shadow min-h-[80px] lg:h-20 flex items-center justify-center">
                     <div className="card-body text-center p-3">
                         <IoMdText size={40} />
                         <p className="text-xs md:text-sm text-gray-900">
@@ -56,11 +56,11 @@ const Cards = ({card}) => {
                 </div>
                 <div
                     onClick={() => handleAction("video")}
-                    className="card shadow lg:h-20 flex items-center justify-center">
+                   className="card shadow min-h-[80px] lg:h-20 flex items-center justify-center">
                     <div className="card-body text-center p-3">
                         <FaVideo size={40} />
 
-                        <p className="text-x  text-gray-900">
+                       <p className="text-xs md:text-sm text-gray-900">
                             Call
                         </p>
                     </div>

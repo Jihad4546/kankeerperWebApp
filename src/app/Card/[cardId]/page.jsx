@@ -13,8 +13,8 @@ const cardDatailsPage = async ({ params }) => {
     const card = data.find(item => item.id === Number(cardId));
 
     return (
-        <div className='container mx-auto px-4 flex flex-col lg:flex-row gap-8 overflow-hidden'>
-            <div className="w-full lg:w-1/3 overflow-hidden">
+        <div className='container mx-auto px-4 flex flex-col lg:flex-row gap-8 '>
+            <div className="w-full lg:w-1/3">
 
                 <div className='shadow text-center space-y-2  p-4 md:p-8 mt-6 md:mt-10'>
                     <img className='w-16 h-16 md:w-24 md:h-24 mx-auto rounded-full' src={card.picture} />
@@ -57,7 +57,7 @@ const cardDatailsPage = async ({ params }) => {
 
             </div>
 
-            <div className='w-full lg:w-2/3 overflow-hidden'>
+            <div className='w-full lg:w-2/3 '>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mt-6 md:mt-10'>
 
                     <div className="card shadow min-h-25 lg:h-36 flex items-center justify-center">

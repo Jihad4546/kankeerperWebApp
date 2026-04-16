@@ -4,10 +4,10 @@ const CardPage = async () => {
  const res = await fetch('https://kenkeeper-webapp.vercel.app/data.json',{cache:"no-store"})
  const data = await res.json()
     return (
-        <div className='container mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 '>
+        <div className='container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
             {
                 data.map((a) => <Link key={a.id} href={`/Card/${a.id}`}>
-                <div  className='shadow text-center space-y-2 p-10'>
+                <div  className='shadow text-center space-y-2 p-4 md:p-6'>
                     <img className='w-24 h-24 mx-auto rounded-full' src={a.picture} alt={a.name} />
                     <h1>{a.name}</h1>
                     <p>{a.days_since_contact}d ago</p>
