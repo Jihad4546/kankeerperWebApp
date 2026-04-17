@@ -7,9 +7,11 @@
                      Next.js
                      React.js
                      Tailwind CSS
-                     React Icons
+                     React Icons-+
+                     Recharts
                      JSON Data Handling (Local API)
                      Vercel (Deployment)
+
 
 
 1.Friend Management System

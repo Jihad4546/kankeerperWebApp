@@ -1,7 +1,7 @@
 import { IoIosAdd } from "react-icons/io";
 import CardPage from "./Card/page";
 import { Suspense } from "react";
-import data from '../Data/data.json'
+import data from "../Data/data.json";
 
 export default function Home() {
   return (
@@ -17,35 +17,54 @@ export default function Home() {
           Add a Friend
         </button>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-10">
-        <div className="card shadow ">
-          <div className="card-body text-center">
-            <h2 className="text-3xl font-semibold">{data.length}</h2>
-            <p className="text-lg text-gray-400">Total Friends</p>
-          </div>
-        </div>
-        <div className="card shadow ">
-          <div className="card-body text-center">
-            <h2 className="text-3xl font-semibold">3</h2>
-            <p className="text-lg text-gray-400">On Track</p>
-          </div>
-        </div>
-        <div className="card shadow ">
-          <div className="card-body text-center">
-            <h2 className="text-3xl font-semibold">6</h2>
-            <p className="text-lg text-gray-400">Need Attention</p>
-          </div>
-        </div>
-        <div className="card shadow ">
-          <div className="card-body text-center">
-            <h2 className="text-3xl font-semibold">12</h2>
-            <p className="text-lg text-gray-400">Interactions This Month</p>
-          </div>
-        </div>
+     <div className="container mx-auto px-3 sm:px-4">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5 mt-10">
+    
+    <div className="card shadow min-w-0 w-full">
+      <div className="card-body text-center p-3 sm:p-4 md:p-6">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold truncate">
+          {data.length}
+        </h2>
+        <p className="text-xs sm:text-sm md:text-base text-gray-400 truncate">
+          Total Friends
+        </p>
       </div>
-      
-       <div className="my-10">
-         <Suspense 
+    </div>
+
+    <div className="card shadow min-w-0 w-full">
+      <div className="card-body text-center p-3 sm:p-4 md:p-6">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">3</h2>
+        <p className="text-xs sm:text-sm md:text-base text-gray-400">
+          On Track
+        </p>
+      </div>
+    </div>
+
+    <div className="card shadow min-w-0 w-full">
+      <div className="card-body text-center p-3 sm:p-4 md:p-6">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">6</h2>
+        <p className="text-xs sm:text-sm md:text-base text-gray-400">
+          Need Attention
+        </p>
+      </div>
+    </div>
+
+    <div className="card shadow min-w-0 w-full">
+      <div className="card-body text-center p-3 sm:p-4 md:p-6">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
+          12
+        </h2>
+        <p className="text-xs sm:text-sm md:text-base text-gray-400">
+          Interactions This Month
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      <div className="my-10">
+        <Suspense
           fallback={
             <div className="flex justify-center items-center h-40">
               <span className="loading loading-spinner text-error"></span>
@@ -54,8 +73,7 @@ export default function Home() {
         >
           <CardPage />
         </Suspense>
-       </div>
-    
+      </div>
     </div>
   );
 }
