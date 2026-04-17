@@ -5,6 +5,9 @@ const CardPage = async () => {
     const data = await res.json()
     return (
         <div>
+            <div className='container mx-auto'>
+                <h2 className='ml-3 py-5 text-xl md:text-2xl'>Your Friends</h2>
+            </div>
             <div className='container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                 {
                     data.map((a) => <Link key={a.id} href={`/Card/${a.id}`}>
